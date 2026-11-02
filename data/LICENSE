@@ -1,0 +1,8 @@
+The stop locations and the crossing scores derived from them are adapted from the BMTC GTFS feed:
+
+Vonter. bmtc-gtfs. https://github.com/Vonter/bmtc-gtfs
+Open Database License 1.0. https://opendatacommons.org/licenses/odbl/1.0/
+Some individual contents of that database are under copyright by BMTC.
+
+The pedestrian routes, corridor lines, and geocoded place names are produced with Amazon Location Service.
+Named high-risk locations and corridors are facts from the Bengaluru Traffic Police Road Safety Report 2023, public domain via OpenCity.

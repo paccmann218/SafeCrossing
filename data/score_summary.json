@@ -1,0 +1,128 @@
+{
+  "detector": "pedestrian_route",
+  "routed": 962,
+  "failures": 0,
+  "gaps": 285,
+  "top": [
+    {
+      "name": "Byatarayanapura FLY",
+      "arrivals": 1033,
+      "straight_m": 24.9,
+      "walk_m": 5406.0,
+      "extra_min": 67.26,
+      "impact": 69479.6
+    },
+    {
+      "name": "Venkatala / Venkatala FLY",
+      "arrivals": 1098,
+      "straight_m": 24.7,
+      "walk_m": 4453.0,
+      "extra_min": 55.35,
+      "impact": 60774.3
+    },
+    {
+      "name": "Singasandra Metro Station",
+      "arrivals": 2044,
+      "straight_m": 52.4,
+      "walk_m": 2196.0,
+      "extra_min": 26.79,
+      "impact": 54758.8
+    },
+    {
+      "name": "Beratena Agrahara Metro Station",
+      "arrivals": 1994,
+      "straight_m": 50.2,
+      "walk_m": 2239.0,
+      "extra_min": 27.36,
+      "impact": 54555.8
+    },
+    {
+      "name": "Venkatala / Venkatala FLY",
+      "arrivals": 1085,
+      "straight_m": 15.2,
+      "walk_m": 4034.0,
+      "extra_min": 50.23,
+      "impact": 54499.5
+    },
+    {
+      "name": "ITI Colony Gate",
+      "arrivals": 2437,
+      "straight_m": 36.6,
+      "walk_m": 1770.0,
+      "extra_min": 21.67,
+      "impact": 52809.8
+    },
+    {
+      "name": "Venkatala FLY",
+      "arrivals": 742,
+      "straight_m": 21.4,
+      "walk_m": 5550.0,
+      "extra_min": 69.11,
+      "impact": 51279.6
+    },
+    {
+      "name": "Horamavu Signal",
+      "arrivals": 1899,
+      "straight_m": 56.6,
+      "walk_m": 1967.0,
+      "extra_min": 23.88,
+      "impact": 45348.1
+    },
+    {
+      "name": "Kogilu Cross / Kogilu Cross FLY",
+      "arrivals": 1148,
+      "straight_m": 30.3,
+      "walk_m": 3004.0,
+      "extra_min": 37.17,
+      "impact": 42671.2
+    },
+    {
+      "name": "Allalasandra Gate FLY",
+      "arrivals": 1038,
+      "straight_m": 30.4,
+      "walk_m": 3180.0,
+      "extra_min": 39.37,
+      "impact": 40866.1
+    },
+    {
+      "name": "ITI Colony Gate",
+      "arrivals": 1713,
+      "straight_m": 22.6,
+      "walk_m": 1809.0,
+      "extra_min": 22.33,
+      "impact": 38251.3
+    },
+    {
+      "name": "Military Dairy Farm (Esteem Mall) / Military Dairy Farm FLY (Esteem Mall)",
+      "arrivals": 1976,
+      "straight_m": 21.9,
+      "walk_m": 1497.0,
+      "extra_min": 18.44,
+      "impact": 36437.4
+    },
+    {
+      "name": "Electronic City / Electronic City FLY",
+      "arrivals": 1251,
+      "straight_m": 43.6,
+      "walk_m": 2337.0,
+      "extra_min": 28.67,
+      "impact": 35866.2
+    },
+    {
+      "name": "Kogilu Cross FLY",
+      "arrivals": 742,
+      "straight_m": 22.8,
+      "walk_m": 3791.0,
+      "extra_min": 47.1,
+      "impact": 34948.2
+    },
+    {
+      "name": "BTL College",
+      "arrivals": 1774,
+      "straight_m": 21.8,
+      "walk_m": 1589.0,
+      "extra_min": 19.59,
+      "impact": 34752.7
+    }
+  ]
+}

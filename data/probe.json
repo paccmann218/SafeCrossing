@@ -1,0 +1,87 @@
+{
+  "decision": "pedestrian_route",
+  "reason": "The Veerasandra gate is crossable in 49 m, but across eight other busy pairs the median walked distance was 14 times the straight-line gap. The pedestrian network is the crossing detector. A gap is a walk more than 150 m longer than the gap and at least three times as far.",
+  "median_ratio": 14.13,
+  "samples": [
+    {
+      "name": "Veerasandra (gate)",
+      "straight_m": 41.4,
+      "walk_m": 49,
+      "duration_s": 68,
+      "ratio": 1.18,
+      "note": "Specified gate. The two Hosur Road stops are about 40 m apart."
+    },
+    {
+      "name": "T Dasarahalli",
+      "pair_id": "21211-21212",
+      "arrivals": 2686,
+      "straight_m": 31.7,
+      "walk_m": 448,
+      "duration_s": 466,
+      "ratio": 14.13
+    },
+    {
+      "name": "Kalamandira Marathahalli Bridge",
+      "pair_id": "22670-23194",
+      "arrivals": 2503,
+      "straight_m": 50.8,
+      "walk_m": 768,
+      "duration_s": 806,
+      "ratio": 15.12
+    },
+    {
+      "name": "Bellanduru Petrol Bunk",
+      "pair_id": "21091-21092",
+      "arrivals": 2481,
+      "straight_m": 35.6,
+      "walk_m": 936,
+      "duration_s": 968,
+      "ratio": 26.29
+    },
+    {
+      "name": "Garvebhavipalya",
+      "pair_id": "20783-20784",
+      "arrivals": 2164,
+      "straight_m": 48.9,
+      "walk_m": 894,
+      "duration_s": 949,
+      "ratio": 18.28
+    },
+    {
+      "name": "Chandapura",
+      "pair_id": "21817-21818",
+      "arrivals": 1950,
+      "straight_m": 36.6,
+      "walk_m": 43,
+      "duration_s": 53,
+      "ratio": 1.17
+    },
+    {
+      "name": "Kodigehalli Gate",
+      "pair_id": "23528-35129",
+      "arrivals": 1907,
+      "straight_m": 54.0,
+      "walk_m": 81,
+      "duration_s": 91,
+      "ratio": 1.5
+    },
+    {
+      "name": "Sadahalli Gate",
+      "pair_id": "28088-34443",
+      "arrivals": 1663,
+      "straight_m": 52.1,
+      "walk_m": 97,
+      "duration_s": 119,
+      "ratio": 1.86
+    },
+    {
+      "name": "Neraluru Gate",
+      "pair_id": "22354-22355",
+      "arrivals": 1174,
+      "straight_m": 36.2,
+      "walk_m": 1732,
+      "duration_s": 1752,
+      "ratio": 47.85
+    }
+  ]
+}

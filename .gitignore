@@ -1,0 +1,14 @@
+data/raw/
+data/route_cache.jsonl
+data/tmp-*.json
+data/aws-input-*.json
+data/staging/
+data/osm_tiles/
+data/osm_crossings.json
+data/athena_crossings.csv
+data/deploy.json
+web/config.js
+__pycache__/
+*.pyc
+tmp/
+.aws/
