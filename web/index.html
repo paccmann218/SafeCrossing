@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Safe Crossing — Bengaluru</title>
+  <meta name="description" content="A map of Bengaluru bus stops where the stop across the road is a long walk. Built with Amazon Location Service, Athena and Iceberg.">
+  <meta property="og:title" content="Safe Crossing — Bengaluru">
+  <meta property="og:description" content="285 Bengaluru bus stop pairs where the stop across the road is a long walk away. At Byatarayanapura the stops are 25 m apart and the walk is 5.4 km.">
+  <meta name="theme-color" content="#0f1013">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23d7263d'/%3E%3Crect x='7' y='8' width='4' height='16' rx='1' fill='%23f4f2ed'/%3E%3Crect x='14' y='8' width='4' height='16' rx='1' fill='%23f4f2ed'/%3E%3Crect x='21' y='8' width='4' height='16' rx='1' fill='%23f4f2ed'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Outfit:wght@300..700&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <script>
+    if (/[?&](crossing|walk|named|arrivals)=/.test(location.search)) {
+      location.replace("map.html" + location.search);
+    }
+  </script>
+</head>
+<body class="page-home">
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html" aria-label="Safe Crossing home">
+        <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#d7263d"/><rect x="7" y="8" width="4" height="16" rx="1" fill="#f4f2ed"/><rect x="14" y="8" width="4" height="16" rx="1" fill="#f4f2ed"/><rect x="21" y="8" width="4" height="16" rx="1" fill="#f4f2ed"/></svg>
+        <span>Safe Crossing</span>
+      </a>
+      <nav aria-label="Sections">
+        <a href="#gaps">Worst gaps</a>
+        <a href="#how">How it works</a>
+        <a href="#walks">Corridor walks</a>
+        <a class="btn small light" href="map.html">Open the map <span class="arrow" aria-hidden="true">→</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <svg class="constellation" id="constellation" aria-hidden="true"></svg>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="pulse" aria-hidden="true"></span> Bengaluru · 9,960 BMTC bus stops</p>
+          <h1>The stop across the road can be <em>a kilometre</em> away.</h1>
+          <p class="lede">Amazon Location walked between every busy pair of bus stops that face each other across a Bengaluru road. Sometimes it is a one-minute step. Sometimes the street will not let you cross, and the walk goes on for kilometres.</p>
+          <div class="actions">
+            <a class="btn primary" href="map.html">Explore the map <span class="arrow" aria-hidden="true">→</span></a>
+            <a class="btn ghost" href="map.html?named=1">Gaps near police blackspots</a>
+          </div>
+          <ul class="stack" aria-label="Built with">
+            <li class="label">Built with</li>
+            <li class="tag aws">Amazon Location Service</li>
+            <li class="tag aws">Amazon Athena</li>
+            <li class="tag aws">Apache Iceberg on S3</li>
+            <li class="tag aws">CloudFront</li>
+          </ul>
+        </div>
+
+        <a class="case" href="map.html?crossing=39269-39270" aria-label="Byatarayanapura Flyover: 25 metres apart, 5.4 kilometres on foot. Open it on the map.">
+          <div class="case-head">
+            <span class="tag">#1 on the fix-first list</span>
+            <span class="tag danger">Police blackspot</span>
+          </div>
+          <h2 class="case-title">Byatarayanapura Flyover</h2>
+          <p class="case-sub">Ballari Road · towards Venkatala ↔ towards Hebbal</p>
+          <figure class="detour" id="hero-detour" aria-hidden="true"></figure>
+          <div class="case-compare">
+            <div><span>Across the road</span><b>25 m</b></div>
+            <span class="vs">vs</span>
+            <div><span>Walking route</span><b class="hot">5.4 km</b></div>
+          </div>
+          <p class="case-note">1,033 buses stop here every day. 11 people were killed at this junction from 2021 to 2023.</p>
+          <span class="case-link">Trace it on the map <span aria-hidden="true">→</span></span>
+        </a>
+      </div>
+    </section>
+
+    <div class="zebra" aria-hidden="true"></div>
+
+    <section class="figures wrap reveal" aria-label="The finding in numbers">
+      <div class="toll">
+        <b>282</b>
+        <p>pedestrians were killed on Bengaluru roads in 2023. That is 31% of every road death in the city.<small>Bengaluru Traffic Police, Road Safety Report 2023</small></p>
+      </div>
+      <ol class="funnel" aria-label="From bus stops to gaps">
+        <li><b>9,960</b><span>BMTC bus stops in the September 2026 feed</span></li>
+        <li><b>2,587</b><span>pairs 12–70 m apart, on opposite sides of a road</span></li>
+        <li><b>962</b><span>busy pairs walked by Amazon Location (400+ buses a day)</span></li>
+        <li class="warm"><b>285</b><span>gaps where the walk is 3× the distance, and 150 m+ longer</span></li>
+        <li class="hot"><b>21</b><span>of those gaps sit within 500 m of a police-named blackspot</span></li>
+      </ol>
+    </section>
+
+    <section id="gaps" class="section wrap">
+      <div class="section-head reveal">
+        <div>
+          <p class="kicker">Fix these first</p>
+          <h2>Every shape here is a real walk.</h2>
+          <p>Each line is the pedestrian route Amazon Location returned between two stops that face each other across the road. The stops are the two dots at the ends. Ranked by extra walking minutes times buses a day.</p>
+        </div>
+        <a class="btn ghost" href="map.html">All 285 on the map <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+      <div class="gallery" id="gallery">
+        <div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div>
+      </div>
+    </section>
+
+    <section id="how" class="section wrap">
+      <div class="section-head reveal">
+        <div>
+          <p class="kicker">How it works</p>
+          <h2>The walking network is the crossing detector.</h2>
+          <p>No one surveyed these roads. If Amazon Location can only find a long way round between two stops a few metres apart, the street has no safe place to cross there, or the map is missing one.</p>
+        </div>
+      </div>
+      <div class="how-grid">
+        <div class="explainer reveal">
+          <h3>How a gap is scored</h3>
+          <p>Two stops on either side of a divided road. The straight line is short. The walked route goes to the next place a pedestrian can cross.</p>
+          <svg viewBox="0 0 520 250" role="img" aria-labelledby="explainer-title">
+            <title id="explainer-title">Diagram: two bus stops across a divided road. The straight line between them is short. The walking route goes along the road to a crossing and back.</title>
+            <defs>
+              <linearGradient id="walk-grad" x1="0" x2="1">
+                <stop offset="0" stop-color="#e6a23c"/>
+                <stop offset="1" stop-color="#d7263d"/>
+              </linearGradient>
+              <pattern id="zebra-v" width="8" height="8" patternUnits="userSpaceOnUse">
+                <rect width="4" height="8" fill="#f4f2ed" opacity="0.8"/>
+              </pattern>
+            </defs>
+            <rect x="0" y="96" width="520" height="66" fill="#24262d"/>
+            <line x1="0" y1="96" x2="520" y2="96" stroke="#3a3d47" stroke-width="2"/>
+            <line x1="0" y1="162" x2="520" y2="162" stroke="#3a3d47" stroke-width="2"/>
+            <line x1="0" y1="113" x2="520" y2="113" stroke="#f4f2ed" stroke-opacity="0.25" stroke-width="2" stroke-dasharray="14 12"/>
+            <line x1="0" y1="145" x2="520" y2="145" stroke="#f4f2ed" stroke-opacity="0.25" stroke-width="2" stroke-dasharray="14 12"/>
+            <rect x="60" y="126" width="460" height="6" rx="3" fill="#868891"/>
+            <rect x="28" y="98" width="26" height="62" fill="url(#zebra-v)"/>
+            <path d="M310 78 L50 78 Q 40 78 40 92 L40 166 Q 40 180 52 180 L330 180" fill="none" stroke="url(#walk-grad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="310" y1="78" x2="330" y2="180" stroke="#f4f2ed" stroke-width="2" stroke-dasharray="3 5"/>
+            <circle cx="310" cy="78" r="11" fill="#e6a23c" stroke="#0f1013" stroke-width="3"/>
+            <text x="310" y="82.5" text-anchor="middle" font-size="12" font-weight="700" fill="#0f1013" font-family="Outfit, sans-serif">A</text>
+            <circle cx="330" cy="180" r="11" fill="#d7263d" stroke="#0f1013" stroke-width="3"/>
+            <text x="330" y="184.5" text-anchor="middle" font-size="12" font-weight="700" fill="#fff" font-family="Outfit, sans-serif">B</text>
+            <rect x="338" y="116" width="118" height="26" rx="13" fill="#f4f2ed"/>
+            <text x="397" y="133" text-anchor="middle" font-size="12" font-weight="600" fill="#0f1013" font-family="Outfit, sans-serif">straight line 25 m</text>
+            <text x="150" y="66" text-anchor="middle" font-size="12" fill="#e6a23c" font-weight="600" font-family="Outfit, sans-serif">walked route →</text>
+            <text x="190" y="206" text-anchor="middle" font-size="12" fill="#ff8a8a" font-weight="600" font-family="Outfit, sans-serif">… back along the other side</text>
+            <text x="41" y="236" text-anchor="middle" font-size="11" fill="#868891" font-family="Outfit, sans-serif">nearest crossing</text>
+            <text x="300" y="236" text-anchor="middle" font-size="11" fill="#868891" font-family="Outfit, sans-serif">median barrier: no crossing here</text>
+          </svg>
+          <div class="rules">
+            <div class="rule"><i>3×</i><span>The walk is <b>at least three times</b> the straight-line gap</span></div>
+            <div class="rule"><i>+150</i><span>…and <b>more than 150 metres longer</b> than the gap</span></div>
+            <div class="rule"><i>↑</i><span>Ranked by <b>extra minutes × buses a day</b> at the pair</span></div>
+          </div>
+        </div>
+
+        <ol class="pipeline">
+          <li class="reveal">
+            <div class="step">
+              <h3>Pair the stops</h3>
+              <p>The BMTC GTFS feed has <span class="num">9,960</span> stops. Stops 12–70 m apart that do not share a parent station are treated as the two sides of one road: <span class="num">2,587</span> pairs.</p>
+              <div class="tags"><span class="tag">BMTC GTFS · ODbL</span><span class="tag">Python</span></div>
+            </div>
+          </li>
+          <li class="reveal">
+            <div class="step">
+              <h3>Walk between them</h3>
+              <p>For the <span class="num">962</span> pairs with 400+ buses a day, a pedestrian <code>CalculateRoutes</code> call walks from one stop to the other. <span class="num">285</span> come back as gaps. Every response is cached, so a rerun repeats no paid calls.</p>
+              <div class="tags"><span class="tag aws">Amazon Location · Routes</span></div>
+            </div>
+          </li>
+          <li class="reveal">
+            <div class="step">
+              <h3>Name the dangerous places</h3>
+              <p>Junctions and corridors from the 2023 Traffic Police report are geocoded. Corridors become car routes between their endpoints. The “stay off” walks pass each corridor as an avoid area.</p>
+              <div class="tags"><span class="tag aws">Amazon Location · Places</span><span class="tag aws">Routes · avoid corridor</span></div>
+            </div>
+          </li>
+          <li class="reveal">
+            <div class="step">
+              <h3>Join in Athena</h3>
+              <p>Pairs and blackspots are staged on S3. One query attaches the nearest named place within 500 m and writes the Iceberg table <code>safe_crossing.crossings</code>.</p>
+              <div class="tags"><span class="tag aws">Amazon Athena</span><span class="tag aws">Apache Iceberg</span><span class="tag aws">Amazon S3</span></div>
+            </div>
+          </li>
+          <li class="reveal">
+            <div class="step">
+              <h3>Ship a map that cannot fail</h3>
+              <p>The Athena export becomes static GeoJSON behind CloudFront. MapLibre draws it on the Amazon Location basemap. Clicking a stop never waits on a live API call.</p>
+              <div class="tags"><span class="tag aws">Amazon Location · Maps</span><span class="tag aws">CloudFront</span><span class="tag">MapLibre GL</span></div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="walks" class="section wrap">
+      <div class="section-head reveal">
+        <div>
+          <p class="kicker">Stay off the corridor</p>
+          <h2>The direct walk, and the one that avoids the fatal stretch.</h2>
+          <p>For five stops on police-named high-risk corridors, Amazon Location walked the same trip twice: once by the shortest path, once told to avoid the corridor.</p>
+        </div>
+        <p class="hint" aria-hidden="true"><span><i class="key-line direct"></i> Direct walk</span><span><i class="key-line"></i> Stays off the corridor</span></p>
+      </div>
+      <div class="walk-grid" id="walk-grid">
+        <a class="walk-card reveal" href="map.html?walk=silkboard-veerasandra" data-walk="silkboard-veerasandra">
+          <div class="walk-thumb"></div>
+          <div class="walk-body">
+            <p class="kicker">Hosur Road</p>
+            <h3>Bommanahalli</h3>
+            <p>Silk Board to Veerasandra. 26 fatalities, 2021–2023.</p>
+            <div class="walk-figs"><span><i class="key-line direct"></i><b>92 m</b></span><span><i class="key-line"></i><b>852 m</b></span></div>
+          </div>
+        </a>
+        <a class="walk-card reveal" href="map.html?walk=esteem-jakkur" data-walk="esteem-jakkur">
+          <div class="walk-thumb"></div>
+          <div class="walk-body">
+            <p class="kicker">Ballari Road</p>
+            <h3>Kodigehalli Gate</h3>
+            <p>Esteem Mall to Jakkur Aerodrome. 12 fatalities, 2021–2023.</p>
+            <div class="walk-figs"><span><i class="key-line direct"></i><b>69 m</b></span><span><i class="key-line"></i><b>372 m</b></span></div>
+          </div>
+        </a>
+        <a class="walk-card reveal" href="map.html?walk=bhattarahalli-medahalli" data-walk="bhattarahalli-medahalli">
+          <div class="walk-thumb"></div>
+          <div class="walk-body">
+            <p class="kicker">Old Madras Road</p>
+            <h3>Bhattarahalli</h3>
+            <p>Bhattarahalli Signal to Medahalli. 10 fatalities, 2021–2023.</p>
+            <div class="walk-figs"><span><i class="key-line direct"></i><b>95 m</b></span><span><i class="key-line"></i><b>952 m</b></span></div>
+          </div>
+        </a>
+        <a class="walk-card reveal" href="map.html?walk=horamavu-hennur" data-walk="horamavu-hennur">
+          <div class="walk-thumb"></div>
+          <div class="walk-body">
+            <p class="kicker">Outer Ring Road</p>
+            <h3>Babusabpalya</h3>
+            <p>Horamavu to Hennur Junction. 8 fatalities, 2021–2023.</p>
+            <div class="walk-figs"><span><i class="key-line direct"></i><b>76 m</b></span><span><i class="key-line"></i><b>953 m</b></span></div>
+          </div>
+        </a>
+        <a class="walk-card reveal" href="map.html?walk=kadubisanahalli-marathahalli" data-walk="kadubisanahalli-marathahalli">
+          <div class="walk-thumb"></div>
+          <div class="walk-body">
+            <p class="kicker">Outer Ring Road</p>
+            <h3>Marathahalli Bridge</h3>
+            <p>Kadubeesanahalli to Marathahalli. 6 fatalities, 2021–2023.</p>
+            <div class="walk-figs"><span><i class="key-line direct"></i><b>57 m</b></span><span><i class="key-line"></i><b>1,268 m</b></span></div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <div class="cta reveal">
+        <div>
+          <p class="kicker">Explore</p>
+          <h2>285 gaps. Find the one on your commute.</h2>
+          <p>Filter by how many buses stop there, search by stop name, or show only the gaps near a police-named blackspot. Every crossing has its own link.</p>
+        </div>
+        <a class="btn primary" href="map.html">Open the map <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap foot-grid">
+      <div>
+        <a class="brand" href="index.html">
+          <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#d7263d"/><rect x="7" y="8" width="4" height="16" rx="1" fill="#f4f2ed"/><rect x="14" y="8" width="4" height="16" rx="1" fill="#f4f2ed"/><rect x="21" y="8" width="4" height="16" rx="1" fill="#f4f2ed"/></svg>
+          <span>Safe Crossing</span>
+        </a>
+        <p class="caveat">Counts are scheduled bus arrivals, not passengers. A dot is a bus stop or a geocoded place name, not a crash. A long walk can also mean the walking map is missing a crossing that exists on the ground.</p>
+      </div>
+      <div>
+        <p>BMTC stops © <a href="https://github.com/Vonter/bmtc-gtfs">Vonter/bmtc-gtfs</a>, ODbL. Blackspots © Bengaluru Traffic Police, public domain via <a href="https://data.opencity.in/dataset/bengaluru-traffic-police-road-safety-reports">OpenCity</a>. Routes, places and basemap © Amazon Location Service.</p>
+        <p>Built for the AWS Weekend Challenge, <a href="https://builder.aws.com/build/hackathons/e7a301ea-4d84-3b9e-95be-7340a70f7781/weekend-challenge-map-it">Map it</a>.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="home.js"></script>
+</body>
+</html>

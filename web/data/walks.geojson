@@ -1,0 +1,947 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.628513,
+            12.90694
+          ],
+          [
+            77.62863,
+            12.90701
+          ],
+          [
+            77.6288,
+            12.90709
+          ],
+          [
+            77.62884,
+            12.90703
+          ],
+          [
+            77.62865,
+            12.90694
+          ],
+          [
+            77.62852,
+            12.90687
+          ],
+          [
+            77.628443,
+            12.90682
+          ]
+        ]
+      },
+      "properties": {
+        "walk_id": "silkboard-veerasandra",
+        "title": "Across Hosur Road at Bommanahalli",
+        "stop_name": "Bommanahalli",
+        "desc_a": "Bommanahalli (Towards Madivala)",
+        "desc_b": "Bommanahalli (Towards Beguru)",
+        "arrivals": 442,
+        "corridor": "Silk Board Junction to Veerasandra Bus Stop",
+        "road": "Hosur Road",
+        "fatalities": 26,
+        "origin": [
+          77.6285,
+          12.90696
+        ],
+        "destination": [
+          77.62847,
+          12.90678
+        ],
+        "variant": "shortest",
+        "distance_m": 92,
+        "duration_s": 113,
+        "notices": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.628513,
+            12.90694
+          ],
+          [
+            77.62848,
+            12.90692
+          ],
+          [
+            77.6282,
+            12.90674
+          ],
+          [
+            77.628,
+            12.90657
+          ],
+          [
+            77.62791,
+            12.90646
+          ],
+          [
+            77.62784,
+            12.90634
+          ],
+          [
+            77.6278,
+            12.90624
+          ],
+          [
+            77.62777,
+            12.90612
+          ],
+          [
+            77.62774,
+            12.90599
+          ],
+          [
+            77.6277,
+            12.9058
+          ],
+          [
+            77.62765,
+            12.9056
+          ],
+          [
+            77.62759,
+            12.90533
+          ],
+          [
+            77.62748,
+            12.90474
+          ],
+          [
+            77.62741,
+            12.90437
+          ],
+          [
+            77.62732,
+            12.90402
+          ],
+          [
+            77.62724,
+            12.90373
+          ],
+          [
+            77.62717,
+            12.90349
+          ],
+          [
+            77.62722,
+            12.90341
+          ],
+          [
+            77.62732,
+            12.90372
+          ],
+          [
+            77.62736,
+            12.90386
+          ],
+          [
+            77.62748,
+            12.90438
+          ],
+          [
+            77.62754,
+            12.90475
+          ],
+          [
+            77.62758,
+            12.90496
+          ],
+          [
+            77.62765,
+            12.90531
+          ],
+          [
+            77.62771,
+            12.90558
+          ],
+          [
+            77.62776,
+            12.90578
+          ],
+          [
+            77.62781,
+            12.90598
+          ],
+          [
+            77.62784,
+            12.90611
+          ],
+          [
+            77.62787,
+            12.90625
+          ],
+          [
+            77.62796,
+            12.90643
+          ],
+          [
+            77.62804,
+            12.90653
+          ],
+          [
+            77.62821,
+            12.90667
+          ],
+          [
+            77.628443,
+            12.90682
+          ]
+        ]
+      },
+      "properties": {
+        "walk_id": "silkboard-veerasandra",
+        "title": "Across Hosur Road at Bommanahalli",
+        "stop_name": "Bommanahalli",
+        "desc_a": "Bommanahalli (Towards Madivala)",
+        "desc_b": "Bommanahalli (Towards Beguru)",
+        "arrivals": 442,
+        "corridor": "Silk Board Junction to Veerasandra Bus Stop",
+        "road": "Hosur Road",
+        "fatalities": 26,
+        "origin": [
+          77.6285,
+          12.90696
+        ],
+        "destination": [
+          77.62847,
+          12.90678
+        ],
+        "variant": "avoid",
+        "distance_m": 852,
+        "duration_s": 870,
+        "notices": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.592827,
+            13.057486
+          ],
+          [
+            77.59285,
+            13.05748
+          ],
+          [
+            77.59309,
+            13.05742
+          ],
+          [
+            77.59318,
+            13.05734
+          ],
+          [
+            77.59318,
+            13.05711
+          ]
+        ]
+      },
+      "properties": {
+        "walk_id": "esteem-jakkur",
+        "title": "Across Ballari Road at Kodigehalli Gate",
+        "stop_name": "Kodigehalli Gate",
+        "desc_a": "Kodigehalli Gate (Towards Hebbala)",
+        "desc_b": "Kodigehalli Gate (Towards Yalahanka)",
+        "arrivals": 939,
+        "corridor": "Esteem Mall to Jakkur Aerodrome",
+        "road": "Ballari Road",
+        "fatalities": 12,
+        "origin": [
+          77.59282,
+          13.05746
+        ],
+        "destination": [
+          77.59323,
+          13.05711
+        ],
+        "variant": "shortest",
+        "distance_m": 69,
+        "duration_s": 74,
+        "notices": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.592827,
+            13.057486
+          ],
+          [
+            77.59263,
+            13.05754
+          ],
+          [
+            77.59214,
+            13.05764
+          ],
+          [
+            77.59159,
+            13.0577
+          ],
+          [
+            77.59144,
+            13.05765
+          ],
+          [
+            77.59158,
+            13.0576
+          ],
+          [
+            77.59211,
+            13.05756
+          ],
+          [
+            77.59243,
+            13.0575
+          ],
+          [
+            77.59308,
+            13.05733
+          ],
+          [
+            77.59318,
+            13.05734
+          ],
+          [
+            77.59318,
+            13.05711
+          ]
+        ]
+      },
+      "properties": {
+        "walk_id": "esteem-jakkur",
+        "title": "Across Ballari Road at Kodigehalli Gate",
+        "stop_name": "Kodigehalli Gate",
+        "desc_a": "Kodigehalli Gate (Towards Hebbala)",
+        "desc_b": "Kodigehalli Gate (Towards Yalahanka)",
+        "arrivals": 939,
+        "corridor": "Esteem Mall to Jakkur Aerodrome",
+        "road": "Ballari Road",
+        "fatalities": 12,
+        "origin": [
+          77.59282,
+          13.05746
+        ],
+        "destination": [
+          77.59323,
+          13.05711
+        ],
+        "variant": "avoid",
+        "distance_m": 372,
+        "duration_s": 399,
+        "notices": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.708942,
+            13.019567
+          ],
+          [
+            77.7089,
+            13.01954
+          ],
+          [
+            77.70861,
+            13.01937
+          ],
+          [
+            77.7087,
+            13.01916
+          ],
+          [
+            77.70871,
+            13.01909
+          ],
+          [
+            77.708743,
+            13.018913
+          ]
+        ]
+      },
+      "properties": {
+        "walk_id": "bhattarahalli-medahalli",
+        "title": "Across Old Madras Road at Bhattarahalli",
+        "stop_name": "Bhattarahalli",
+        "desc_a": "Bhattarahalli (Towards Kempegowda Bus Station)",
+        "desc_b": "Bhattarahalli (Towards Seegehalli Circle)",
+        "arrivals": 436,
+        "corridor": "Bhattarahalli Signal to Medahalli Bus Stop",
+        "road": "Old Madras Road",
+        "fatalities": 10,
+        "origin": [
+          77.70898,
+          13.01951
+        ],
+        "destination": [
+          77.70878,
+          13.01892
+        ],
+        "variant": "shortest",
+        "distance_m": 95,
+        "duration_s": 103,
+        "notices": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.708942,
+            13.019567
+          ],
+          [
+            77.7093,
+            13.01979
+          ],
+          [
+            77.70957,
+            13.01994
+          ],
+          [
+            77.70981,
+            13.01929
+          ],
+          [
+            77.71023,
+            13.01821
+          ],
+          [
+            77.71036,
+            13.01765
+          ],
+          [
+            77.71042,
+            13.01726
+          ],
+          [
+            77.71048,
+            13.01695
+          ],
+          [
+            77.71052,
+            13.01671
+          ],
+          [
+            77.71058,
+            13.0163
+          ],
+          [
+            77.71046,
+            13.0163
+          ],
+          [
+            77.70979,
+            13.01624
+          ],
+          [
+            77.70931,
+            13.01617
+          ],
+          [
+            77.70924,
+            13.01662
+          ],
+          [
+            77.7092,
+            13.01688
+          ],
+          [
+            77.70909,
+            13.01751
+          ],
+          [
+            77.70906,
+            13.01762
+          ],
+          [
+            77.709,
+            13.01785
+          ],
+          [
+            77.70891,
+            13.01815
+          ],
+          [
+            77.70885,
+            13.01842
+          ],
+          [
+            77.70878,
+            13.01872
+          ],
+          [
+            77.708743,
+            13.018913
+          ]
+        ]
+      },
+      "properties": {
+        "walk_id": "bhattarahalli-medahalli",
+        "title": "Across Old Madras Road at Bhattarahalli",
+        "stop_name": "Bhattarahalli",
+        "desc_a": "Bhattarahalli (Towards Kempegowda Bus Station)",
+        "desc_b": "Bhattarahalli (Towards Seegehalli Circle)",
+        "arrivals": 436,
+        "corridor": "Bhattarahalli Signal to Medahalli Bus Stop",
+        "road": "Old Madras Road",
+        "fatalities": 10,
+        "origin": [
+          77.70898,
+          13.01951
+        ],
+        "destination": [
+          77.70878,
+          13.01892
+        ],
+        "variant": "avoid",
+        "distance_m": 952,
+        "duration_s": 985,
+        "notices": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.647196,
+            13.022712
+          ],
+          [
+            77.64749,
+            13.02257
+          ],
+          [
+            77.64759,
+            13.02276
+          ],
+          [
+            77.647456,
+            13.022823
+          ]
+        ]
+      },
+      "properties": {
+        "walk_id": "horamavu-hennur",
+        "title": "Across Outer Ring Road at Babusabpalya",
+        "stop_name": "Babusabpalya",
+        "desc_a": "Babusabpalya (Towards Tin Factory)",
+        "desc_b": "Babusabpalya (Towards Last Stop)",
+        "arrivals": 1124,
+        "corridor": "Horamavu Junction to Hennur Junction",
+        "road": "Outer Ring Road",
+        "fatalities": 8,
+        "origin": [
+          77.64721,
+          13.02274
+        ],
+        "destination": [
+          77.64747,
+          13.02285
+        ],
+        "variant": "shortest",
+        "distance_m": 76,
+        "duration_s": 94,
+        "notices": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.647196,
+            13.022712
+          ],
+          [
+            77.64654,
+            13.02303
+          ],
+          [
+            77.64642,
+            13.02314
+          ],
+          [
+            77.64633,
+            13.02319
+          ],
+          [
+            77.64518,
+            13.02369
+          ],
+          [
+            77.64509,
+            13.02373
+          ],
+          [
+            77.64432,
+            13.02409
+          ],
+          [
+            77.64338,
+            13.0245
+          ],
+          [
+            77.6434,
+            13.02461
+          ],
+          [
+            77.64359,
+            13.02453
+          ],
+          [
+            77.64378,
+            13.02445
+          ],
+          [
+            77.64406,
+            13.02431
+          ],
+          [
+            77.6444,
+            13.02416
+          ],
+          [
+            77.64514,
+            13.02384
+          ],
+          [
+            77.64522,
+            13.0238
+          ],
+          [
+            77.64544,
+            13.02371
+          ],
+          [
+            77.64579,
+            13.02355
+          ],
+          [
+            77.64601,
+            13.02346
+          ],
+          [
+            77.64623,
+            13.02336
+          ],
+          [
+            77.64681,
+            13.02313
+          ],
+          [
+            77.647456,
+            13.022823
+          ]
+        ]
+      },
+      "properties": {
+        "walk_id": "horamavu-hennur",
+        "title": "Across Outer Ring Road at Babusabpalya",
+        "stop_name": "Babusabpalya",
+        "desc_a": "Babusabpalya (Towards Tin Factory)",
+        "desc_b": "Babusabpalya (Towards Last Stop)",
+        "arrivals": 1124,
+        "corridor": "Horamavu Junction to Hennur Junction",
+        "road": "Outer Ring Road",
+        "fatalities": 8,
+        "origin": [
+          77.64721,
+          13.02274
+        ],
+        "destination": [
+          77.64747,
+          13.02285
+        ],
+        "variant": "avoid",
+        "distance_m": 953,
+        "duration_s": 974,
+        "notices": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.700621,
+            12.956954
+          ],
+          [
+            77.70068,
+            12.95695
+          ],
+          [
+            77.70093,
+            12.95693
+          ],
+          [
+            77.70095,
+            12.95701
+          ],
+          [
+            77.700986,
+            12.957143
+          ]
+        ]
+      },
+      "properties": {
+        "walk_id": "kadubisanahalli-marathahalli",
+        "title": "Across Outer Ring Road at Marathahalli Bridge",
+        "stop_name": "Marathahalli Bridge",
+        "desc_a": "Marathahalli Bridge (Towards Kempegowda Bus Station)",
+        "desc_b": "Marathahalli Bridge (Towards Tin Factory)",
+        "arrivals": 639,
+        "corridor": "Kadubeesanahalli Bus Stop to Marathahalli Junction",
+        "road": "Outer Ring Road",
+        "fatalities": 6,
+        "origin": [
+          77.70062,
+          12.95694
+        ],
+        "destination": [
+          77.70096,
+          12.95715
+        ],
+        "variant": "shortest",
+        "distance_m": 57,
+        "duration_s": 65,
+        "notices": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.700621,
+            12.956954
+          ],
+          [
+            77.70039,
+            12.95697
+          ],
+          [
+            77.70031,
+            12.95698
+          ],
+          [
+            77.70018,
+            12.95699
+          ],
+          [
+            77.70008,
+            12.957
+          ],
+          [
+            77.69995,
+            12.95702
+          ],
+          [
+            77.69979,
+            12.95703
+          ],
+          [
+            77.69952,
+            12.95705
+          ],
+          [
+            77.69925,
+            12.95705
+          ],
+          [
+            77.69905,
+            12.95705
+          ],
+          [
+            77.69884,
+            12.95703
+          ],
+          [
+            77.69806,
+            12.95688
+          ],
+          [
+            77.6979,
+            12.95685
+          ],
+          [
+            77.69782,
+            12.95684
+          ],
+          [
+            77.69759,
+            12.9568
+          ],
+          [
+            77.69753,
+            12.95679
+          ],
+          [
+            77.69731,
+            12.95675
+          ],
+          [
+            77.69708,
+            12.95671
+          ],
+          [
+            77.69666,
+            12.95664
+          ],
+          [
+            77.69641,
+            12.9566
+          ],
+          [
+            77.6964,
+            12.95667
+          ],
+          [
+            77.69666,
+            12.95671
+          ],
+          [
+            77.69706,
+            12.95678
+          ],
+          [
+            77.69729,
+            12.95682
+          ],
+          [
+            77.6975,
+            12.95686
+          ],
+          [
+            77.69756,
+            12.95687
+          ],
+          [
+            77.69782,
+            12.95691
+          ],
+          [
+            77.69791,
+            12.95693
+          ],
+          [
+            77.69806,
+            12.95695
+          ],
+          [
+            77.69883,
+            12.9571
+          ],
+          [
+            77.69906,
+            12.95713
+          ],
+          [
+            77.69911,
+            12.95736
+          ],
+          [
+            77.69927,
+            12.95789
+          ],
+          [
+            77.69944,
+            12.95831
+          ],
+          [
+            77.69945,
+            12.95838
+          ],
+          [
+            77.69948,
+            12.95842
+          ],
+          [
+            77.69962,
+            12.95844
+          ],
+          [
+            77.69977,
+            12.95846
+          ],
+          [
+            77.70006,
+            12.95851
+          ],
+          [
+            77.70047,
+            12.95864
+          ],
+          [
+            77.70054,
+            12.95866
+          ],
+          [
+            77.70108,
+            12.95876
+          ],
+          [
+            77.70102,
+            12.9574
+          ],
+          [
+            77.70099,
+            12.95716
+          ]
+        ]
+      },
+      "properties": {
+        "walk_id": "kadubisanahalli-marathahalli",
+        "title": "Across Outer Ring Road at Marathahalli Bridge",
+        "stop_name": "Marathahalli Bridge",
+        "desc_a": "Marathahalli Bridge (Towards Kempegowda Bus Station)",
+        "desc_b": "Marathahalli Bridge (Towards Tin Factory)",
+        "arrivals": 639,
+        "corridor": "Kadubeesanahalli Bus Stop to Marathahalli Junction",
+        "road": "Outer Ring Road",
+        "fatalities": 6,
+        "origin": [
+          77.70062,
+          12.95694
+        ],
+        "destination": [
+          77.70096,
+          12.95715
+        ],
+        "variant": "avoid",
+        "distance_m": 1268,
+        "duration_s": 1314,
+        "notices": 0
+      }
+    }
+  ]
+}

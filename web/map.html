@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Map — Safe Crossing</title>
+  <meta name="description" content="Explore 285 Bengaluru bus stop pairs where the stop across the road is a long walk.">
+  <meta name="theme-color" content="#0f1013">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23d7263d'/%3E%3Crect x='7' y='8' width='4' height='16' rx='1' fill='%23f4f2ed'/%3E%3Crect x='14' y='8' width='4' height='16' rx='1' fill='%23f4f2ed'/%3E%3Crect x='21' y='8' width='4' height='16' rx='1' fill='%23f4f2ed'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Outfit:wght@300..700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body class="page-map">
+  <div id="app">
+    <aside aria-label="Crossings">
+      <header class="dash-head">
+        <div class="top">
+          <a class="brand" href="index.html">
+            <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#d7263d"/><rect x="7" y="8" width="4" height="16" rx="1" fill="#f4f2ed"/><rect x="14" y="8" width="4" height="16" rx="1" fill="#f4f2ed"/><rect x="21" y="8" width="4" height="16" rx="1" fill="#f4f2ed"/></svg>
+            <span>Safe Crossing</span>
+          </a>
+          <a class="back" href="index.html">← About</a>
+        </div>
+        <h1>Where the stop across the road is a long walk</h1>
+        <p class="lede">Click a stop to trace the walk Amazon Location found. Colour is the extra time, size is buses a day.</p>
+      </header>
+
+      <div class="stats" id="stats">
+        <div class="stat"><b>285</b><span>stop pairs with a long crossing</span></div>
+        <div class="stat"><b>21</b><span>near a police blackspot</span></div>
+        <div class="stat hot"><b>282</b><span>pedestrians killed, 2023</span></div>
+      </div>
+
+      <div class="zebra-rule" aria-hidden="true"></div>
+
+      <div class="tabs" role="tablist" aria-label="Views">
+        <button type="button" class="tab is-on" id="tab-list" data-tab="list" role="tab" aria-selected="true" aria-controls="panel-list">Fix these first <span class="count" id="count-list">285</span></button>
+        <button type="button" class="tab" id="tab-walks" data-tab="walks" role="tab" aria-selected="false" aria-controls="panel-walks">Corridor walks <span class="count">5</span></button>
+      </div>
+
+      <div class="panel" id="panel-list" role="tabpanel" aria-labelledby="tab-list">
+        <div class="filters">
+          <label class="search">
+            <span class="sr-only">Search stops</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <input id="search" type="search" placeholder="Search a stop or junction" autocomplete="off">
+          </label>
+          <div class="filter-row">
+            <div>
+              <span class="filter-label">Buses a day</span>
+              <div class="seg" id="min-arrivals" role="group" aria-label="Minimum buses a day">
+                <button type="button" data-value="400" class="is-on">400+</button>
+                <button type="button" data-value="1000">1,000+</button>
+                <button type="button" data-value="2000">2,000+</button>
+              </div>
+            </div>
+            <label class="switch">
+              <input id="named-only" type="checkbox">
+              <span class="track" aria-hidden="true"></span>
+              Near a blackspot
+            </label>
+          </div>
+        </div>
+        <div class="list-head"><span id="list-label">Ranked by impact</span><span id="list-count"></span></div>
+        <div class="scroll">
+          <ol id="rank"><li class="empty">Loading crossings…</li></ol>
+        </div>
+      </div>
+
+      <div class="panel" id="panel-walks" role="tabpanel" aria-labelledby="tab-walks" hidden>
+        <div class="scroll">
+          <p class="hint"><span><i class="key-line direct"></i> Direct walk</span><span><i class="key-line"></i> Stays off the police-named corridor</span></p>
+          <ol id="walk-list"></ol>
+        </div>
+      </div>
+
+      <details class="about">
+        <summary>How this was measured</summary>
+        <p>Pairs are BMTC stops 12–70 metres apart that do not share a parent station. For every pair with at least 400 scheduled arrivals a day, Amazon Location calculated the pedestrian route from one side to the other. A gap means that walk is at least three times the straight-line distance and more than 150 metres longer.</p>
+        <p>Counts are scheduled bus arrivals, not passengers. A long walk can also mean the walking map is missing a crossing that exists on the ground.</p>
+      </details>
+      <footer class="dash-foot">
+        <p>BMTC © <a href="https://github.com/Vonter/bmtc-gtfs">Vonter</a>, ODbL · Police report via <a href="https://data.opencity.in/dataset/bengaluru-traffic-police-road-safety-reports">OpenCity</a> · Routes &amp; basemap © Amazon Location</p>
+      </footer>
+    </aside>
+
+    <main>
+      <div id="map" role="region" aria-label="Map of crossings"></div>
+      <div class="map-msg" id="map-msg"><span class="loader">Loading the map…</span></div>
+
+      <div class="legend glass" id="legend">
+        <button type="button" class="legend-toggle" aria-expanded="false" aria-controls="legend-body">Legend &amp; layers ▾</button>
+        <div class="legend-body" id="legend-body">
+          <h4 class="desk">Extra walk</h4>
+          <div class="ramp" aria-hidden="true"></div>
+          <div class="ramp-labels"><span>3 min</span><span>8 min</span><span>15 min+</span></div>
+          <div class="sizes"><i style="width:8px;height:8px"></i><i style="width:13px;height:13px"></i><i style="width:20px;height:20px"></i><span>Buses a day</span></div>
+          <hr>
+          <label class="layer-toggle"><input type="checkbox" data-layer="gaps" checked><i class="sym dot"></i> Stop pairs with a long walk</label>
+          <label class="layer-toggle"><input type="checkbox" data-layer="blackspots" checked><i class="sym spot"></i> Police-named blackspot</label>
+          <label class="layer-toggle"><input type="checkbox" data-layer="corridors" checked><i class="sym corr"></i> High-risk corridor</label>
+        </div>
+      </div>
+
+      <article id="card" class="glass" hidden aria-live="polite"></article>
+    </main>
+  </div>
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

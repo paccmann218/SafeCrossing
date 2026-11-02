@@ -1,0 +1,401 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.59663,
+          13.06971
+        ]
+      },
+      "properties": {
+        "id": "byatarayanapura",
+        "name": "Byatarayanapura Junction",
+        "road": "Ballari Road",
+        "division": "North",
+        "fatalities": 11,
+        "geocode_label": "Byatarayanapura, Bengaluru, Karnataka, India"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.64715,
+          13.19115
+        ]
+      },
+      "properties": {
+        "id": "sadahalli-gate",
+        "name": "Sadahalli Gate",
+        "road": "Ballari Road",
+        "division": "North",
+        "fatalities": 10,
+        "geocode_label": "Sadahalli Gate bus stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.60912,
+          13.13769
+        ]
+      },
+      "properties": {
+        "id": "yelahanka-afs",
+        "name": "Yelahanka Air Force Station Bus Stop",
+        "road": "Ballari Road",
+        "division": "North",
+        "fatalities": 8,
+        "geocode_label": "Yelahanka Air Force Station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.51841,
+          13.0398
+        ]
+      },
+      "properties": {
+        "id": "jalahalli-cross",
+        "name": "Jalahalli Cross",
+        "road": "Tumkur Road",
+        "division": "North",
+        "fatalities": null,
+        "geocode_label": "Jalahalli Cross Road & Tumkur Road & AH47, 1st Stage, Peenya Industrial Area, Bengaluru 560058, India"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.59316,
+          13.07344
+        ]
+      },
+      "properties": {
+        "id": "gkvk-gate",
+        "name": "GKVK Gate",
+        "road": "Ballari Road",
+        "division": "North",
+        "fatalities": null,
+        "geocode_label": "GKVK Gate"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.58918,
+          13.03664
+        ]
+      },
+      "properties": {
+        "id": "hebbal-flyover",
+        "name": "Hebbal Flyover",
+        "road": "Ballari Road",
+        "division": "North",
+        "fatalities": null,
+        "geocode_label": "Hebbal Flyover, Hebbal, Bengaluru 560024, India"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.59267,
+          13.05722
+        ]
+      },
+      "properties": {
+        "id": "kodigehalli-gate",
+        "name": "Kodigehalli Gate",
+        "road": "Ballari Road",
+        "division": "North",
+        "fatalities": null,
+        "geocode_label": "Kodigehalli Gate"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.55003,
+          13.02303
+        ]
+      },
+      "properties": {
+        "id": "yeshwanthpur-metro",
+        "name": "Yeshwanthpur Metro Station",
+        "road": "Tumkur Road",
+        "division": "North",
+        "fatalities": null,
+        "geocode_label": "Yeshwanthpur Metro Station"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.519665,
+          12.987215
+        ]
+      },
+      "properties": {
+        "id": "summanahalli",
+        "name": "Summanahalli Junction",
+        "road": "Outer Ring Road",
+        "division": "West",
+        "fatalities": 11,
+        "geocode_label": "BMTC stops named summanahalli"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.58766,
+          12.96677
+        ]
+      },
+      "properties": {
+        "id": "hudson-circle",
+        "name": "Hudson Circle",
+        "road": "Nrupathunga Road",
+        "division": "West",
+        "fatalities": null,
+        "geocode_label": "Hudson Circle, Sampangi Rama Nagar, Bengaluru 560027, India"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6019,
+          12.93879
+        ]
+      },
+      "properties": {
+        "id": "dairy-circle",
+        "name": "Dairy Circle",
+        "road": "Bannerghatta Road",
+        "division": "West",
+        "fatalities": null,
+        "geocode_label": "Dairy Circle"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.51902,
+          12.93662
+        ]
+      },
+      "properties": {
+        "id": "nayandahalli",
+        "name": "Nayandahalli Junction",
+        "road": "Mysore Road",
+        "division": "West",
+        "fatalities": null,
+        "geocode_label": "Mysore Road, Iti Layout, Nayandahalli, Bengaluru 560085, India"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6764,
+          12.84081
+        ]
+      },
+      "properties": {
+        "id": "veerasandra",
+        "name": "Veerasandra Bus Stop",
+        "road": "Hosur Road",
+        "division": "South",
+        "fatalities": 14,
+        "geocode_label": "Hosur Road, Veerasandra, Electronic City, Bengaluru 560100, India"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.63762,
+          12.89289
+        ]
+      },
+      "properties": {
+        "id": "garvebhavipalya",
+        "name": "Garvebhavipalya Junction",
+        "road": "Hosur Road",
+        "division": "South",
+        "fatalities": null,
+        "geocode_label": "Hosur Road, Garvebhavi Palya, Bengaluru 560068, India"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.64328,
+          12.88377
+        ]
+      },
+      "properties": {
+        "id": "singasandra",
+        "name": "Singasandra",
+        "road": "Hosur Road",
+        "division": "South",
+        "fatalities": null,
+        "geocode_label": "Hosur Road, Singasandra, Bengaluru 560068, India"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.53673,
+          12.93535
+        ]
+      },
+      "properties": {
+        "id": "pes-college",
+        "name": "PES College Bus Stop",
+        "road": "Outer Ring Road",
+        "division": "South",
+        "fatalities": null,
+        "geocode_label": "New Pes College-Eb"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.57318,
+          12.90943
+        ]
+      },
+      "properties": {
+        "id": "sarakki",
+        "name": "Sarakki Signal",
+        "road": "Kanakapura Road",
+        "division": "South",
+        "fatalities": null,
+        "geocode_label": "Nandus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.66718,
+          12.92164
+        ]
+      },
+      "properties": {
+        "id": "agara",
+        "name": "Agara Junction",
+        "road": "Outer Ring Road",
+        "division": "South",
+        "fatalities": null,
+        "geocode_label": "Outer Ring Road, Iblur-Agara, Bellandur, Bengaluru 560103, India"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.63239,
+          13.02767
+        ]
+      },
+      "properties": {
+        "id": "hennur",
+        "name": "Hennur Junction",
+        "road": "Outer Ring Road",
+        "division": "East",
+        "fatalities": null,
+        "geocode_label": "Hennur Ring Road Junction & 80 Feet Road & Outer Ring Road & AH43, Bengaluru 560043, India"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.70213,
+          12.95669
+        ]
+      },
+      "properties": {
+        "id": "marathahalli-bridge",
+        "name": "Marathahalli Bridge",
+        "road": "Old Madras Road",
+        "division": "East",
+        "fatalities": null,
+        "geocode_label": "Marathahalli Bridge"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.66966,
+          12.99697
+        ]
+      },
+      "properties": {
+        "id": "kr-puram-bridge",
+        "name": "KR Puram Bridge",
+        "road": "Old Madras Road",
+        "division": "East",
+        "fatalities": null,
+        "geocode_label": "AH43 & Old Madras Road & K R Puram Bridge, A Narayanapura, Mahadevapura, Bengaluru 560016, India"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.71197,
+          13.02147
+        ]
+      },
+      "properties": {
+        "id": "bhattarahalli",
+        "name": "Bhattarahalli",
+        "road": "Old Madras Road",
+        "division": "East",
+        "fatalities": null,
+        "geocode_label": "Old Madras Road, Bhattarahalli, Krishnarajapuram, Bengaluru 560049, India"
+      }
+    }
+  ]
+}
